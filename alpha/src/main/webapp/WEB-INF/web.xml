@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <context-param>
+    <javaee:param-name>project_title</javaee:param-name>
+    <javaee:param-value>Projeto Alpha</javaee:param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>showInfo</servlet-name>
+    <servlet-class>br.com.alpha.servlet.ShowTable</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showInfo</servlet-name>
+    <url-pattern>/info</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+</web-app>
