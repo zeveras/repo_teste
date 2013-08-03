@@ -21,6 +21,8 @@ public class ShowTable extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		out.println("<html><body>olá! teste!</body></html>");
 		
+		//teste
+		
 		throw new IOException();
 	}
 }
